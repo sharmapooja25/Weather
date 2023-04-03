@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".view.HomePageActivity" >
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/tv_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:hint="@string/enter_city_name"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/_14sdp"
+            android:drawableLeft="@drawable/baseline_search_24"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="@string/search"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.5"
+            android:padding="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:drawablePadding="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints">
+        </Button>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
